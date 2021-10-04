@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working - sumAll exercise</title>
+</head>
+
+<body>
+
+    <script>
+
+        const sumAll = function(num1,num2) {
+            let difference = num2 - num1;
+            let result = 0;
+            let i; 
+            const array = [];
+
+            for (i = num1; i <= num2; i++) {
+                console.log(i);
+                array.push(i);
+                
+                
+            }
+
+            for (i = 0; i <= array.length -1; i++) {
+                result = result + array[i];
+            }
+
+
+            console.log(result);
+        
+        };
+
+        sumAll(1,5);
+
+    </script>
+    
+</body>
+
+</html>
