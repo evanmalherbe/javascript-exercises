@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp conversion exercise working</title>
+</head>
+<body>
+    
+<script>
+    const ftoc = function(faran) {
+        let ansInCels = (faran - 32) * (5 / 9);
+        let result = Math.round(ansInCels * 10) /10  ;
+        console.log(result + " Celsius");
+        return result;
+    };
+
+    const ctof = function(cels) {
+        let ansInFaran = cels * 1.8 + 32
+        result = Math.round(ansInFaran * 10) /10;
+        
+        console.log(result + " Fahrenheit");
+        return result;
+    };
+
+    ftoc(100);
+    ctof(0);
+
+</script>
+
+</body>
+</html>
